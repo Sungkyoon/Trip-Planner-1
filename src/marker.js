@@ -13,11 +13,11 @@ const icon = {
 
 const buildMarker = function (type, coords) {
   if (type === 'Activity'){
-   return new mapboxgl.Marker(icon.Activity).setLngLat(coords);
+    new mapboxgl.Marker(icon.Activity).setLngLat(coords);
   } else if (type === 'Hotel'){
-    return new mapboxgl.Marker(icon.Hotel).setLngLat(coords);
+    new mapboxgl.Marker(icon.Hotel).setLngLat(coords);
   } else {
-    return new mapboxgl.Marker(icon.Restaurant).setLngLat(coords);
+    new mapboxgl.Marker(icon.Restaurant).setLngLat(coords);
   }
 
 }
